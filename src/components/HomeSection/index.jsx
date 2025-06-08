@@ -27,7 +27,8 @@ export default function HomeSection() {
             variant="contained"
             color="primary"
             size="large"
-            onClick={handleScrollToContact}>
+            onClick={handleScrollToContact}
+          >
             Call Now!
           </Button>
         </Grid>
