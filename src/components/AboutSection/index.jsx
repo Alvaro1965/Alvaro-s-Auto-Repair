@@ -1,8 +1,10 @@
-
+import { Box, } from "@mui/material";
 
 export default function AboutSection(){
 
   return(
-    <h1>About</h1>
+    <Box component='section' id="about">
+      <h1>About</h1>
+    </Box>
   )
 }
