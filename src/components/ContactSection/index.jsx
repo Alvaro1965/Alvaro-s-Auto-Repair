@@ -1,8 +1,10 @@
-
+import { Box, } from "@mui/material";
 
 export default function ContactSection(){
 
   return(
-    <h1>Contact</h1>
+    <Box component='section' id="contact">
+      <h1>Contact</h1>
+    </Box>
   )
 }
