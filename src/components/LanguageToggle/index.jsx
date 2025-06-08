@@ -28,3 +28,32 @@ export default function LanguageToggle() {
     </ToggleButtonGroup>
   );
 }
+
+// code for switch
+// import { Box, FormControlLabel, Switch } from '@mui/material';
+// import { useState } from 'react';
+
+// export default function LanguageToggle() {
+//   const [isSpanish, setIsSpanish] = useState(false);
+
+//   const handleChange = (event) => {
+//     setIsSpanish(event.target.checked);
+//     // Add logic to switch languages here
+//   };
+
+//   return (
+//     <Box>
+//       <FormControlLabel
+//         control={
+//           <Switch
+//             checked={isSpanish}
+//             onChange={handleChange}
+//             color="primary"
+//           />
+//         }
+//         label={isSpanish ? 'Español' : 'English'}
+//         labelPlacement="start" // Places the label to the left of the switch
+//       />
+//     </Box>
+//   );
+// }
