@@ -11,7 +11,16 @@
     "cta": "Call Now"
   },
   "services": {
-    "heading": "Our Services",
-    "extra": "Don’t see what you need? Just ask — Alvaro offers a wide range of general auto repair services."
+    "title": "Our Services",
+    "oil": "Oil Change",
+    "brakes": "Brake Service",
+    "tuneups": "Tune-Ups",
+    "battery": "Battery Replacement",
+    "suspension": "Suspension & Steering",
+    "waterPump": "Water Pump Repair",
+    "ac": "AC & Heating Repair",
+    "diagnostics": "Engine Diagnostics",
+    "more": "And More...",
+    "footer": "Don’t see what you need? Just ask — Alvaro offers a wide range of general auto repair services."
   }
 }

@@ -11,7 +11,16 @@
     "cta": "¡Llámanos Ahora!"
   },
   "services": {
-    "heading": "Nuestros Servicios",
-    "extra": "¿No ves lo que necesitas? Pregunta — Alvaro ofrece una amplia gama de servicios generales de reparación."
+    "title": "Nuestros Servicios",
+    "oil": "Cambio de Aceite",
+    "brakes": "Servicio de Frenos",
+    "tuneups": "Afinaciones",
+    "battery": "Reemplazo de Batería",
+    "suspension": "Suspensión y Dirección",
+    "waterPump": "Reparación de la Bomba de Agua",
+    "ac": "Reparación de AC y Calefacción",
+    "diagnostics": "Diagnóstico del Motor",
+    "more": "Y Más...",
+    "footer": "¿No ves lo que necesitas? Solo pregunta — Alvaro ofrece una amplia gama de servicios generales de reparación de autos."
   }
 }

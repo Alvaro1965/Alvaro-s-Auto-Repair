@@ -9,24 +9,28 @@ import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices
 import PlumbingIcon from '@mui/icons-material/Plumbing';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
-const services = [
-  { icon: <LocalGasStationIcon fontSize="large" />, label: 'Oil Change' },
-  { icon: <BuildIcon fontSize="large" />, label: 'Brake Service' },              // ✅ Brakes
-  { icon: <MiscellaneousServicesIcon fontSize="large" />, label: 'Tune-Ups' },  // ✅ Tune-ups
-  { icon: <BatteryChargingFullIcon fontSize="large" />, label: 'Battery Replacement' },
-  { icon: <PlumbingIcon fontSize="large" />, label: 'Suspension & Steering' },
-  { icon: <RotateRightIcon fontSize="large" />, label: 'Water Pump Repair' },   // ✅ Water Pumps
-  { icon: <AcUnitIcon fontSize="large" />, label: 'AC & Heating Repair' },
-  { icon: <DirectionsCarIcon fontSize="large" />, label: 'Engine Diagnostics' },
-  { icon: <MoreHorizIcon fontSize="large" />, label: 'And More...' },
-];
 
 export default function ServicesSection() {
+  const { t } = useTranslation();
+
+  const services = [
+    { icon: <LocalGasStationIcon fontSize="large" />, label: t('services.oil') },
+    { icon: <BuildIcon fontSize="large" />, label: t('services.brakes') },              
+    { icon: <MiscellaneousServicesIcon fontSize="large" />, label: t('services.tuneups') },  
+    { icon: <BatteryChargingFullIcon fontSize="large" />, label: t('services.battery') },
+    { icon: <PlumbingIcon fontSize="large" />, label:  t('services.suspension') },
+    { icon: <RotateRightIcon fontSize="large" />, label: t('services.waterPump') },  
+    { icon: <AcUnitIcon fontSize="large" />, label: t('services.ac') },
+    { icon: <DirectionsCarIcon fontSize="large" />, label: t('services.diagnostics')},
+    { icon: <MoreHorizIcon fontSize="large" />, label: t('services.more') },
+  ];
+
   return (
     <Box component="section" id="services" sx={{ py: 8 }}>
       <Typography variant="h4" align="center" gutterBottom>
-        Our Services
+        {t('services.title')}
       </Typography>
 
       <Grid container spacing={4}>
@@ -48,7 +52,7 @@ export default function ServicesSection() {
       </Grid>
 
       <Typography align="center" variant="body1" sx={{ mt: 4 }}>
-        Don’t see what you need? Just ask — Alvaro offers a wide range of general auto repair services.
+        {t('services.footer')}
       </Typography>
     </Box>
   );

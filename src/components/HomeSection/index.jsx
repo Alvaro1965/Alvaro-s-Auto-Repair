@@ -12,21 +12,6 @@ export default function HomeSection() {
 
   const { t } = useTranslation();
 
-  // return (
-  //   <Box id="home" sx={{ py: 8 }}>
-  //     <Grid container spacing={4} alignItems="center">
-  //       <Grid item xs={12} sm={6}>
-  //         <Typography variant="h3" gutterBottom>{t('home.title')}</Typography>
-  //         <Typography variant="body1" gutterBottom>{t('home.description')}</Typography>
-  //         <Button variant="contained" href="#contact" sx={{ mt: 2 }}>
-  //           {t('home.cta')}
-  //         </Button>
-  //       </Grid>
-  //     </Grid>
-  //   </Box>
-  // );
-
-
   return (
     <Box component="section" id="home" sx={{ minHeight: "100vh", py: 8 }}>
       <Grid container spacing={4} alignItems="center">
