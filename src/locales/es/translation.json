@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Bienvenido a Alvaro's Auto Repair",
+    "description": "Servicio automotriz confiable, económico y rápido — hecho bien desde la primera vez. En Alvaro’s Auto Repair, nos especializamos en diagnósticos honestos, mano de obra de calidad y en devolverte la confianza al volante. Ya sea mantenimiento rutinario o reparaciones mayores, tu vehículo está en buenas manos.",
+    "cta": "¡Llámanos Ahora!"
+  },
+  "services": {
+    "heading": "Nuestros Servicios",
+    "extra": "¿No ves lo que necesitas? Pregunta — Alvaro ofrece una amplia gama de servicios generales de reparación."
+  }
+}

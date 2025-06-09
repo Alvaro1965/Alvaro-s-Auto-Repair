@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to Alvaro's Auto Repair",
+    "description": "Reliable, affordable, and fast auto care — done right the first time. At Alvaro’s Auto Repair, we specialize in honest diagnostics, quality workmanship, and getting you back on the road with confidence. Whether it’s routine maintenance or major repairs, your vehicle is in good hands.",
+    "cta": "Call Now"
+  },
+  "services": {
+    "heading": "Our Services",
+    "extra": "Don’t see what you need? Just ask — Alvaro offers a wide range of general auto repair services."
+  }
+}
