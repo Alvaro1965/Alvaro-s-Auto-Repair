@@ -1,13 +1,15 @@
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function LanguageToggle() {
-  const [lang, setLang] = useState('en');
+  const { i18n } = useTranslation();
+  const [lang, setLang] = useState(i18n.language || 'en');
 
   const handleChange = (event, newLang) => {
     if (newLang !== null) {
       setLang(newLang);
-      // later: add logic here to switch language content
+      i18n.changeLanguage(newLang);
     }
   };
 
@@ -16,44 +18,46 @@ export default function LanguageToggle() {
       value={lang}
       exclusive
       onChange={handleChange}
+      aria-label="Language toggle"
       size="small"
-      aria-label="language toggle"
+      sx={{
+        backgroundColor: 'white',
+        borderRadius: 2,
+        overflow: 'hidden',
+        boxShadow: 1,
+        ml: 2,
+      }}
     >
-      <ToggleButton value="en" aria-label="English">
+      <ToggleButton
+        value="en"
+        aria-label="English"
+        sx={{
+          fontWeight: 'bold',
+          textTransform: 'uppercase',
+          px: 2,
+          '&.Mui-selected': {
+            backgroundColor: 'primary.main',
+            color: 'white',
+          },
+        }}
+      >
         EN
       </ToggleButton>
-      <ToggleButton value="es" aria-label="Spanish">
+      <ToggleButton
+        value="es"
+        aria-label="Spanish"
+        sx={{
+          fontWeight: 'bold',
+          textTransform: 'uppercase',
+          px: 2,
+          '&.Mui-selected': {
+            backgroundColor: 'primary.main',
+            color: 'white',
+          },
+        }}
+      >
         ES
       </ToggleButton>
     </ToggleButtonGroup>
   );
 }
-
-// code for switch
-// import { Box, FormControlLabel, Switch } from '@mui/material';
-// import { useState } from 'react';
-
-// export default function LanguageToggle() {
-//   const [isSpanish, setIsSpanish] = useState(false);
-
-//   const handleChange = (event) => {
-//     setIsSpanish(event.target.checked);
-//     // Add logic to switch languages here
-//   };
-
-//   return (
-//     <Box>
-//       <FormControlLabel
-//         control={
-//           <Switch
-//             checked={isSpanish}
-//             onChange={handleChange}
-//             color="primary"
-//           />
-//         }
-//         label={isSpanish ? 'Español' : 'English'}
-//         labelPlacement="start" // Places the label to the left of the switch
-//       />
-//     </Box>
-//   );
-// }
