@@ -1,33 +1,51 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
+import mechanicImg from "../../assets/images/mechanic-logo5.png";
 
-export default function AboutSection(){
+export default function AboutSection() {
+  return (
+    <Grid container sx={{ width: '100%' }}>
+      {/* Image */}
+      <Grid item xs={12} md={6}>
+        <Box
+          sx={{
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            p: 2,
+          }}
+        >
+          <Box
+            component="img"
+            src={mechanicImg}
+            alt="Auto Repair"
+            sx={{
+              maxWidth: '50%',
+              height: 'auto',
+              borderRadius: 2,
+              boxShadow: 3,
+            }}
+          />
+        </Box>
+      </Grid>
 
-  return(
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-        width: '100%',
-      }}>
-      <Box component='section' id="about" sx={{ width: '100%', maxWidth: 730 }}>
-        <Typography variant="h3" gutterBottom align="center">
-          About
-        </Typography>
-        <Typography variant="body1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Dicta esse nihil voluptates impedit blanditiis reprehenderit
-          suscipit iusto iure praesentium provident itaque,
-          laudantium possimus explicabo omnis quisquam beatae voluptate
-          earum atque. Non officiis obcaecati quas dignissimos reiciendis
-          placeat incidunt animi quis illum. Nihil quo, dicta laudantium
-          praesentium quasi quis facere eum quisquam officiis cupiditate
-          hic impedit adipisci et magni veritatis iusto doloribus aliquam
-          molestias. Deleniti veniam laboriosam a fugiat molestiae blanditiis
-          magni pariatur porro dicta corporis obcaecati eius sit quibusdam doloribus
-          provident quae voluptate, omnis expedita ab dolorem perferendis et. Eveniet
-          repellendus unde qui ex. Quod repellat omnis velit distinctio aliquid!
-        </Typography>
-      </Box>
-    </Box>
-  )
+      {/* About section */}
+      <Grid item xs={12} md={6}>
+        <Box component="section" id="about" sx={{ maxWidth: 730, mx: 'auto', p: 2 }}>
+          <Typography variant="h3" gutterBottom align="center">
+            About
+          </Typography>
+          <Typography variant="body1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dicta esse nihil voluptates impedit blanditiis reprehenderit
+            suscipit iusto iure praesentium provident itaque,
+            laudantium possimus explicabo omnis quisquam beatae voluptate
+            earum atque. Non officiis obcaecati quas dignissimos reiciendis
+            placeat incidunt animi quis illum...
+          </Typography>
+        </Box>
+      </Grid>
+    </Grid>
+  );
 }
