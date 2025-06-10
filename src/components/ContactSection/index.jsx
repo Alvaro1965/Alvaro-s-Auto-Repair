@@ -1,4 +1,4 @@
-import { Box, Typography, Stack } from "@mui/material";
+import { Box, Typography, Stack, Link } from "@mui/material";
 
 export default function ContactSection(){
 
@@ -19,9 +19,9 @@ export default function ContactSection(){
 
         <Box>
           <Typography variant="h6">Phone Number:</Typography>
-          <Typography variant="body1">
+          <Link href='tel: +1234567890' underline='hover'>
             (123) 456-7890
-          </Typography>
+          </Link>
         </Box>
 
         <Box>
