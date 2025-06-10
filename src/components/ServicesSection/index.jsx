@@ -11,7 +11,6 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-
 export default function ServicesSection() {
   const { t } = useTranslation();
 
