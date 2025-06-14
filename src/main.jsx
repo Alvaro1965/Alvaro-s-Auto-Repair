@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './i18n';
 
 import './App.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import App from './App';
 import Home from './pages/Home';
