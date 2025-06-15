@@ -1,31 +1,30 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, useMediaQuery, useTheme } from "@mui/material";
 import mechanicImg from "../../assets/images/mechanic-logo5.png";
+import CustomCarousel from "../CustomCarousel";
 
 export default function AboutSection() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const aboutImages = [
+    { src: mechanicImg, alt: "Mechanic at work 1" },
+    { src: mechanicImg, alt: "Mechanic at work 2" },
+    { src: mechanicImg, alt: "Mechanic at work 3" },
+  ];
+
   return (
-    <Box component="section" id="about" sx={{ minHeight: "100vh", py: 4}}>
+    <Box component="section" id="about" sx={{ py: 4 }}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} sm={6} component="aside">
           <Box
             sx={{
-              width: "100%",
-              height: "100%",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               p: 2,
-            }}>
-            <Box
-              component="img"
-              src={mechanicImg}
-              alt="Auto Repair"
-              sx={{
-                maxWidth: "50%",
-                height: "auto",
-                borderRadius: 2,
-                boxShadow: 3,
-              }}
-            />
+            }}
+          >
+            <CustomCarousel images={aboutImages} isMobile={isMobile} />
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} component="article" textAlign="center">
