@@ -7,7 +7,6 @@ import AcUnitIcon from '@mui/icons-material/AcUnit';
 import RotateRightIcon from '@mui/icons-material/RotateRight';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import PlumbingIcon from '@mui/icons-material/Plumbing';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
@@ -23,7 +22,6 @@ export default function ServicesSection() {
     { icon: <RotateRightIcon fontSize="large" />, label: t('services.waterPump') },  
     { icon: <AcUnitIcon fontSize="large" />, label: t('services.ac') },
     { icon: <DirectionsCarIcon fontSize="large" />, label: t('services.diagnostics')},
-    { icon: <MoreHorizIcon fontSize="large" />, label: t('services.more') },
   ];
 
   return (
