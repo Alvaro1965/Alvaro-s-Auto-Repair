@@ -22,10 +22,10 @@ export default function LanguageToggle() {
       size="small"
       sx={{
         backgroundColor: 'white',
-        borderRadius: 2,
+        borderRadius: 1,
         overflow: 'hidden',
-        boxShadow: 1,
-        ml: 2,
+        boxShadow: 3,
+        // ml: 2,
       }}
     >
       <ToggleButton
@@ -33,11 +33,16 @@ export default function LanguageToggle() {
         aria-label="English"
         sx={{
           fontWeight: 'bold',
+          fontSize:'12px',
           textTransform: 'uppercase',
-          px: 2,
+          px: 1.5,
+          // minWidth: '40px',
           '&.Mui-selected': {
             backgroundColor: 'primary.main',
             color: 'white',
+          },
+          '&:hover': {
+            backgroundColor: 'primary.light',
           },
         }}
       >
@@ -48,11 +53,15 @@ export default function LanguageToggle() {
         aria-label="Spanish"
         sx={{
           fontWeight: 'bold',
+          fontSize:'12px',
           textTransform: 'uppercase',
-          px: 2,
+          px: 1.5,
           '&.Mui-selected': {
             backgroundColor: 'primary.main',
             color: 'white',
+          },
+          '&:hover': {
+            backgroundColor: 'primary.light',
           },
         }}
       >
