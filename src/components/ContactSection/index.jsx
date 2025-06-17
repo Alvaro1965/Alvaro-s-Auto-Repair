@@ -10,7 +10,7 @@ const MotionBox = motion(Box);
 
 export default function ContactSection() {
   return (
-    <Box component="section" id="contact" sx={{ py: 4 }}>
+    <Box sx= {{textAlign: { xs: 'center', md: 'left' } }}>
       <MotionTypography
         variant="h4"
         gutterBottom
@@ -63,7 +63,7 @@ export default function ContactSection() {
               <Typography variant="h5">
                 <CallIcon fontSize="small" /> Phone
               </Typography>
-              <Link href="tel:+19165296016" underline="hover">
+              <Link href="tel:+19165296016" underline="hover" sx={{ color: '#1e1e1e', fontWeight: 'bold' }}>
                 (916) 529-6016
               </Link>
             </MotionBox>
