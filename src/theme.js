@@ -3,17 +3,20 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2',
+      main: '#F5F1E6',
     },
     secondary: {
-      main: '#ff4081',
+      main: '#1A1A1A',
     },
-    background: {
-      default: '#f5f5f5',
+    third: {
+      main: '#B03026',
     },
     text: {
-      primary: '#222',
+      primary: '#1A1A1A',
     },
+  },
+  customColors: {
+    hoverAccent: '#90251F',
   },
 });
 
