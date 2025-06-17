@@ -1,6 +1,11 @@
 import { Box, Typography, Grid, useMediaQuery, useTheme } from "@mui/material";
 import mechanicImg from "../../assets/images/mechanic-logo5.png";
 import CustomCarousel from "../CustomCarousel";
+import { motion } from "framer-motion";
+
+const MotionGridItem = motion(Grid);
+const MotionTypography = motion(Typography);
+const MotionBox = motion(Box);
 
 export default function AboutSection() {
   const theme = useTheme();
@@ -15,23 +20,61 @@ export default function AboutSection() {
   return (
     <Box component="section" id="about" sx={{ py: 4 }}>
       <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} sm={6} component="aside">
-          <Box
+        <MotionGridItem
+          item
+          xs={12}
+          sm={6}
+          component="aside"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <MotionBox
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               p: 2,
             }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
           >
             <CustomCarousel images={aboutImages} isMobile={isMobile} />
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} component="article" textAlign="center">
-          <Typography variant="h3" gutterBottom align="center">
+          </MotionBox>
+        </MotionGridItem>
+
+        <MotionGridItem
+          item
+          xs={12}
+          sm={6}
+          component="article"
+          textAlign="center"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <MotionTypography
+            variant="h3"
+            gutterBottom
+            align="center"
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             About
-          </Typography>
-          <Typography variant="body1">
+          </MotionTypography>
+          <MotionTypography
+            variant="body1"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
             With over 40 years of hands-on experience and more than 14 years serving 
             the community at this shop, we take pride in delivering honest, reliable, 
             and expert automotive care. What began as a passion for working on cars has 
@@ -44,8 +87,8 @@ export default function AboutSection() {
             relationships. Thanks to word-of-mouth and loyal customers, we've become the 
             go-to shop for generations of families. We don't just fix cars. We help keep 
             our community safely on the road.
-          </Typography>
-        </Grid>
+          </MotionTypography>
+        </MotionGridItem>
       </Grid>
     </Box>
   );
