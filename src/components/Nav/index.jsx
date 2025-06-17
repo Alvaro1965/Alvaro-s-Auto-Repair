@@ -33,8 +33,8 @@ export default function Nav() {
 
           {isMobile ? (
             <Box>
-              <IconButton edge="end" color="inherit" onClick={toggleDrawer(true)}>
-                <MenuIcon />
+              <IconButton edge="end" onClick={toggleDrawer(true)}>
+                <MenuIcon sx={{ color: '#F5F1E6 '}}/>
               </IconButton>
             </Box>
           ) : (
@@ -52,7 +52,7 @@ export default function Nav() {
 
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
         <Box
-          sx={{ width: 250 }}
+          sx={{ width: 250, backgroundColor: '#1e1e1e', color: '#F5F1E6', height: '100%' }}
           role="presentation"
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}

@@ -18,6 +18,11 @@ export default function ContactSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
+        sx={{
+          borderBottom: (theme) => `4px solid ${theme.palette.third.main}`,
+          display: "inline-block",
+          mb: 4,
+        }}
       >
         Contact Us
       </MotionTypography>

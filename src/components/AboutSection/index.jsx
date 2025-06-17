@@ -65,6 +65,11 @@ export default function AboutSection() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
+            sx={{
+              borderBottom: (theme) => `4px solid ${theme.palette.third.main}`,
+              display: "inline-block",
+              mb: 4,
+            }}
           >
             About
           </MotionTypography>
