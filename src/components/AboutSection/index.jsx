@@ -32,11 +32,18 @@ export default function AboutSection() {
             About
           </Typography>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse
-            nihil voluptates impedit blanditiis reprehenderit suscipit iusto
-            iure praesentium provident itaque, laudantium possimus explicabo
-            omnis quisquam beatae voluptate earum atque. Non officiis obcaecati
-            quas dignissimos reiciendis placeat incidunt animi quis illum...
+            With over 40 years of hands-on experience and more than 14 years serving 
+            the community at this shop, we take pride in delivering honest, reliable, 
+            and expert automotive care. What began as a passion for working on cars has 
+            grown into a trusted neighborhood repair shop known for quality workmanship 
+            and personalized service. Our lead mechanic has decades of experience with 
+            a wide range of makes and models, from domestic classics to modern imports. 
+            Whether it's routine maintenance or complex diagnostics, we treat every vehicle 
+            with the care and attention it deserves. Our goal is to get the job done right 
+            the first time. We believe in transparency, fair pricing, and building lasting 
+            relationships. Thanks to word-of-mouth and loyal customers, we've become the 
+            go-to shop for generations of families. We don't just fix cars. We help keep 
+            our community safely on the road.
           </Typography>
         </Grid>
       </Grid>

@@ -1,4 +1,7 @@
 import { Box, Typography, Stack, Link, Grid, } from "@mui/material";
+import PlaceIcon from '@mui/icons-material/Place';
+import CallIcon from '@mui/icons-material/Call';
+import TimeIcon from '@mui/icons-material/AccessTime';
 
 export default function ContactSection() {
 
@@ -12,7 +15,7 @@ export default function ContactSection() {
         <Grid item xs={12} md={6}>
           <Stack spacing={3}>
             <Box>
-              <Typography variant="h6">Address:</Typography>
+              <Typography variant="h6"><PlaceIcon /> Address</Typography>
               <Typography variant="body1">
                 1406 Church Street
                 <br />
@@ -21,14 +24,14 @@ export default function ContactSection() {
             </Box>
 
             <Box>
-              <Typography variant="h6">Phone Number:</Typography>
+              <Typography variant="h6"><CallIcon /> Phone Number </Typography>
               <Link href="tel:+19165296016" underline="hover">
                 (916) 529-6016
               </Link>
             </Box>
 
             <Box>
-              <Typography variant="h6">Work Hours:</Typography>
+              <Typography variant="h6"><TimeIcon /> Work Hours</Typography>
               <Typography variant="body1">
                 Monday - Friday: 9:00 AM - 6:00 PM
                 <br />
