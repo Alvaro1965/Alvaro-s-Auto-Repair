@@ -1,12 +1,13 @@
 import { Box, Grid, Typography, useTheme } from '@mui/material';
 import BuildIcon from '@mui/icons-material/Build';
-import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
 import BatteryChargingFullIcon from '@mui/icons-material/BatteryChargingFull';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import RotateRightIcon from '@mui/icons-material/RotateRight';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import PlumbingIcon from '@mui/icons-material/Plumbing';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faOilCan } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
@@ -15,7 +16,7 @@ export default function ServicesSection() {
   const theme = useTheme();
 
   const services = [
-    { icon: <LocalGasStationIcon fontSize="large" />, label: t('services.oil') },
+    { icon: <FontAwesomeIcon icon={faOilCan} size="2x" />, label: t('services.oil') },
     { icon: <BuildIcon fontSize="large" />, label: t('services.brakes') },              
     { icon: <MiscellaneousServicesIcon fontSize="large" />, label: t('services.tuneups') },  
     { icon: <BatteryChargingFullIcon fontSize="large" />, label: t('services.battery') },
