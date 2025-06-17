@@ -38,7 +38,7 @@ export default function HomeSection() {
             <Trans
               i18nKey="home.title"
               components={{
-                name: <span style={{ color: theme.palette.third.main }} />,
+                name: <span style={{ fontWeight: "bold", color: theme.palette.third.main }} />,
               }}
             />
           </Typography>

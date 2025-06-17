@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography, useTheme } from '@mui/material';
 import BuildIcon from '@mui/icons-material/Build';
 import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
 import BatteryChargingFullIcon from '@mui/icons-material/BatteryChargingFull';
@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function ServicesSection() {
   const { t } = useTranslation();
+  const theme = useTheme();
 
   const services = [
     { icon: <LocalGasStationIcon fontSize="large" />, label: t('services.oil') },
@@ -28,7 +29,7 @@ export default function ServicesSection() {
     <Box component="section" id="services" sx={{ py: 8, textAlign: 'center' }}>
       <Typography variant="h4" align="center" gutterBottom 
         sx={{
-          borderBottom: theme => `4px solid ${theme.palette.third.main}`,
+          borderBottom: `4px solid ${theme.palette.third.main}`,
           display: 'inline-block',
           mb:4,
         }}

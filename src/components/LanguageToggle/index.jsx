@@ -25,7 +25,6 @@ export default function LanguageToggle() {
         backgroundColor: "white",
         borderRadius: 1,
         overflow: "hidden",
-        boxShadow: 3,
       }}
     >
       {["en", "es"].map((lng) => (
