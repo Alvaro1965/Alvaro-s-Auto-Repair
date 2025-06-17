@@ -25,7 +25,7 @@ export default function Nav() {
 
   return (
     <>
-      <AppBar position="sticky" color="default">
+      <AppBar position="sticky" sx={{ backgroundColor:'#1e1e1e'}}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <img src={mechanicImg} alt="Mechanic Logo" style={{ height: 60 }} />
