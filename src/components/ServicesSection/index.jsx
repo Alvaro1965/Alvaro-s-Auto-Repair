@@ -38,7 +38,7 @@ export default function ServicesSection() {
 
       <Grid container spacing={4}>
         {services.map((service, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index} >
+          <Grid item xs={12} sm={6} md={3} key={index}>
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
