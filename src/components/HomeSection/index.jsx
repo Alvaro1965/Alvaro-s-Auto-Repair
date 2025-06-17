@@ -1,6 +1,6 @@
 import { Box, Grid, Typography, Button, useMediaQuery, useTheme } from "@mui/material";
 import mechanicImg from "../../assets/images/mechanic-logo5.png";
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import CustomCarousel from "../CustomCarousel";
 
 export default function HomeSection() {
@@ -25,9 +25,12 @@ export default function HomeSection() {
   return (
     <Box component="section" id="home" sx={{ minHeight: "100vh", py: 8 }}>
       <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} sm={6} component="article" textAlign="center">
+        <Grid item xs={12} sm={6} component="article" textAlign="center" sx={{ color: theme.palette.text.primary }}>
           <Typography variant="h3" gutterBottom>
-            {t('home.title')}
+          <Trans
+            i18nKey="home.title"
+            components={{ name: <span style={{ color: theme.palette.third.main }} /> }}
+          />
           </Typography>
           <Typography variant="body1" gutterBottom>
             {t('home.description')}
@@ -37,6 +40,13 @@ export default function HomeSection() {
             color="primary"
             size="large"
             onClick={handleScrollToContact}
+            sx={{
+              backgroundColor: theme.palette.third.main,
+              color: theme.palette.primary.main,
+              '&:hover': {
+                backgroundColor: theme.customColors.hoverAccent,
+              },
+            }}
           >
             {t('home.cta')}
           </Button>
