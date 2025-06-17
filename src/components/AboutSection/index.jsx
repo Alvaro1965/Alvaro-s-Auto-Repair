@@ -19,7 +19,7 @@ export default function AboutSection() {
 
   return (
     <Box component="section" id="about" sx={{ py: 4 }}>
-      <Grid container spacing={4} alignItems="center">
+      <Grid container spacing={4} alignItems="center" direction={{ xs: 'column-reverse', sm: 'row' }}>
         <MotionGridItem
           item
           xs={12}
