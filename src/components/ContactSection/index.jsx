@@ -3,12 +3,15 @@ import PlaceIcon from '@mui/icons-material/Place';
 import CallIcon from '@mui/icons-material/Call';
 import TimeIcon from '@mui/icons-material/AccessTime';
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const MotionGridItem = motion(Grid);
 const MotionTypography = motion(Typography);
 const MotionBox = motion(Box);
 
 export default function ContactSection() {
+  const { t } = useTranslation();
+
   return (
     <Box sx= {{textAlign: { xs: 'center', md: 'left' } }}>
       <MotionTypography
@@ -24,7 +27,7 @@ export default function ContactSection() {
           mb: 4,
         }}
       >
-        Contact Us
+        {t("Contact.title")}
       </MotionTypography>
 
       <Grid container spacing={4}>
@@ -45,7 +48,7 @@ export default function ContactSection() {
               viewport={{ once: true }}
             >
               <Typography variant="h5">
-                <PlaceIcon fontSize="small" /> Address
+                <PlaceIcon fontSize="small" /> {t("Contact.address")}
               </Typography>
               <Typography variant="body1">
                 1406 Church Street
@@ -61,7 +64,7 @@ export default function ContactSection() {
               viewport={{ once: true }}
             >
               <Typography variant="h5">
-                <CallIcon fontSize="small" /> Phone
+                <CallIcon fontSize="small" /> {t("Contact.phone")}
               </Typography>
               <Link href="tel:+19165296016" underline="hover" sx={{ color: '#1e1e1e', fontWeight: 'bold' }}>
                 (916) 529-6016
@@ -75,14 +78,14 @@ export default function ContactSection() {
               viewport={{ once: true }}
             >
               <Typography variant="h5">
-                <TimeIcon fontSize="small" /> Work Hours
+                <TimeIcon fontSize="small" /> {t("Contact.hours")}
               </Typography>
               <Typography variant="body1">
-                Monday - Friday: 9:00 AM - 6:00 PM
+                {t("Contact.week")}
                 <br />
-                Saturday: 10:00 AM - 4:00 PM
+                {t("Contact.weekend")}
                 <br />
-                Sunday: Closed
+                {t("Contact.closed")}
               </Typography>
             </MotionBox>
           </Stack>
@@ -92,7 +95,7 @@ export default function ContactSection() {
           item
           xs={12}
           md={6}
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
