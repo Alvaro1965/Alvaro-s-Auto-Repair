@@ -34,7 +34,7 @@ export default function AboutSection() {
           sm={6}
           component="aside"
           sx={{ p: 1 }} //delete if you change spacing 0 to 4
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           // viewport={{ once: true }}
@@ -65,7 +65,7 @@ export default function AboutSection() {
           sx={{ p: 1 }} //delete if you change spacing 0 to 4
           component="article"
           textAlign="center"
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           // viewport={{ once: true }}
