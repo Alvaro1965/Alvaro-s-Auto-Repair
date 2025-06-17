@@ -1,12 +1,18 @@
-import { Box, Grid, Typography, Button, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  Button,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import mechanicImg from "../../assets/images/mechanic-logo5.png";
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation, Trans } from "react-i18next";
 import CustomCarousel from "../CustomCarousel";
 
 export default function HomeSection() {
-
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const { t } = useTranslation();
 
   const handleScrollToContact = () => {
@@ -25,15 +31,19 @@ export default function HomeSection() {
   return (
     <Box component="section" id="home" sx={{ minHeight: "100vh", py: 8 }}>
       <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} sm={6} component="article" textAlign="center" sx={{ color: theme.palette.text.primary }}>
+        <Grid item xs={12} sm={6} component="article" textAlign="center"
+          sx={{ color: theme.palette.text.primary }}
+        >
           <Typography variant="h3" gutterBottom>
-          <Trans
-            i18nKey="home.title"
-            components={{ name: <span style={{ color: theme.palette.third.main }} /> }}
-          />
+            <Trans
+              i18nKey="home.title"
+              components={{
+                name: <span style={{ color: theme.palette.third.main }} />,
+              }}
+            />
           </Typography>
           <Typography variant="body1" gutterBottom>
-            {t('home.description')}
+            {t("home.description")}
           </Typography>
           <Button
             variant="contained"
@@ -43,12 +53,12 @@ export default function HomeSection() {
             sx={{
               backgroundColor: theme.palette.third.main,
               color: theme.palette.primary.main,
-              '&:hover': {
+              "&:hover": {
                 backgroundColor: theme.customColors.hoverAccent,
               },
             }}
           >
-            {t('home.cta')}
+            {t("home.cta")}
           </Button>
         </Grid>
         <Grid item xs={12} sm={6} component="aside">

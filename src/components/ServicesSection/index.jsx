@@ -25,14 +25,20 @@ export default function ServicesSection() {
   ];
 
   return (
-    <Box component="section" id="services" sx={{ py: 8 }}>
-      <Typography variant="h4" align="center" gutterBottom>
+    <Box component="section" id="services" sx={{ py: 8, textAlign: 'center' }}>
+      <Typography variant="h4" align="center" gutterBottom 
+        sx={{
+          borderBottom: theme => `4px solid ${theme.palette.third.main}`,
+          display: 'inline-block',
+          mb:4,
+        }}
+      >
         {t('services.title')}
       </Typography>
 
       <Grid container spacing={4}>
         {services.map((service, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index} sx={{ textAlign: 'center' }}>
+          <Grid item xs={12} sm={6} md={3} key={index} >
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +54,7 @@ export default function ServicesSection() {
         ))}
       </Grid>
 
-      <Typography align="center" variant="body1" sx={{ mt: 4 }}>
+      <Typography variant="body1" sx={{ mt: 4 }}>
         {t('services.footer')}
       </Typography>
     </Box>
