@@ -10,6 +10,10 @@
     "description": "Servicio automotriz confiable, económico y rápido — hecho bien desde la primera vez. En Alvaro’s Auto Repair, nos especializamos en diagnósticos honestos, mano de obra de calidad y en devolverte la confianza al volante. Ya sea mantenimiento rutinario o reparaciones mayores, tu vehículo está en buenas manos.",
     "cta": "¡Llámanos Ahora!"
   },
+  "About": {
+    "title": "Acerca de",
+    "description": "Hola, soy Alvaro Contreras. Llevo más de 40 años trabajando con autos, y desde hace 14 tengo el privilegio de servir a esta comunidad en mi propio taller. Lo que comenzó como una pasión por desarmar cosas y entender cómo funcionan se convirtió en una carrera que realmente amo. He trabajado con todo tipo de vehículos, desde clásicos americanos hasta autos importados modernos, y sin importar qué auto entre al taller, siempre lo trato como si fuera mío. Creo en hacer un trabajo honesto, ofrecer precios justos y dejar todo bien hecho desde la primera vez. Esto no se trata solo de reparar autos, se trata de ayudar a las personas a mantenerse seguras en el camino y de construir relaciones basadas en la confianza. Me siento orgulloso de ser parte de este vecindario, y estoy aquí para cuando necesites a alguien que te trate a ti y a tu auto con el respeto que merecen."
+  },
   "services": {
     "title": "Nuestros Servicios",
     "oil": "Cambio de Aceite",

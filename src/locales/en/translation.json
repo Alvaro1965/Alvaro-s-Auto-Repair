@@ -10,6 +10,10 @@
     "description": "Reliable, affordable, and fast auto care — done right the first time. At Alvaro’s Auto Repair, we specialize in honest diagnostics, quality workmanship, and getting you back on the road with confidence. Whether it’s routine maintenance or major repairs, your vehicle is in good hands.",
     "cta": "Call Now"
   },
+  "About": {
+    "title": "About",
+    "description": "Hi, I’m Alvaro Contreras. I’ve been working on cars for over 40 years, and for the past 14, I’ve had the privilege of serving this community at my own shop. What started as a passion for taking things apart and figuring out how they work turned into a career I truly love. I believe in doing honest work, offering fair prices, and getting the job done right the first time. This isn’t just about fixing cars—it’s about helping people stay safe on the road and building trust with every customer who walks through our doors. I’m proud to be part of this neighborhood, and I’m here if you ever need someone who’ll treat you and your car with the respect you deserve."
+  },
   "services": {
     "title": "Our Services",
     "oil": "Oil Change",
