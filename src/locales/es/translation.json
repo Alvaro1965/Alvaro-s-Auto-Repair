@@ -25,5 +25,14 @@
     "ac": "Reparación de AC y Calefacción",
     "diagnostics": "Diagnóstico del Motor",
     "footer": "¿No ves lo que necesitas? Solo pregunta — Alvaro ofrece una amplia gama de servicios generales de reparación de autos."
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "hours": "Horario De Trabajo",
+    "week": "Lunes a Viernes: ",
+    "weekend": "Sábado: ",
+    "closed": "Domingo: Cerrado"
   }
 }

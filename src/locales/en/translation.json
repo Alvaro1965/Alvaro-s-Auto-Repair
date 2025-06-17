@@ -25,5 +25,14 @@
     "ac": "AC & Heating Repair",
     "diagnostics": "Engine Diagnostics",
     "footer": "Don’t see what you need? Just ask — Alvaro offers a wide range of general auto repair services."
+  },
+  "Contact":{
+    "title":"Contact Us",
+    "address":"Address",
+    "phone":"Phone",
+    "hours":"Work Hours",
+    "week":"Monday - Friday: ",
+    "weekend":"Saturday: ",
+    "closed":"Sunday: Closed"
   }
 }
