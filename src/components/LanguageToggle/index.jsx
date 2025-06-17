@@ -1,10 +1,11 @@
-import { ToggleButton, ToggleButtonGroup } from '@mui/material';
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { ToggleButton, ToggleButtonGroup, useTheme } from "@mui/material";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function LanguageToggle() {
   const { i18n } = useTranslation();
-  const [lang, setLang] = useState(i18n.language || 'en');
+  const [lang, setLang] = useState(i18n.language || "en");
+  const theme = useTheme();
 
   const handleChange = (event, newLang) => {
     if (newLang !== null) {
@@ -21,52 +22,40 @@ export default function LanguageToggle() {
       aria-label="Language toggle"
       size="small"
       sx={{
-        backgroundColor: 'white',
+        backgroundColor: "white",
         borderRadius: 1,
-        overflow: 'hidden',
+        overflow: "hidden",
         boxShadow: 3,
-        // ml: 2,
       }}
     >
-      <ToggleButton
-        value="en"
-        aria-label="English"
-        sx={{
-          fontWeight: 'bold',
-          fontSize:'12px',
-          textTransform: 'uppercase',
-          px: 1.5,
-          // minWidth: '40px',
-          '&.Mui-selected': {
-            backgroundColor: 'primary.main',
-            color: 'white',
-          },
-          '&:hover': {
-            backgroundColor: 'primary.light',
-          },
-        }}
-      >
-        EN
-      </ToggleButton>
-      <ToggleButton
-        value="es"
-        aria-label="Spanish"
-        sx={{
-          fontWeight: 'bold',
-          fontSize:'12px',
-          textTransform: 'uppercase',
-          px: 1.5,
-          '&.Mui-selected': {
-            backgroundColor: 'primary.main',
-            color: 'white',
-          },
-          '&:hover': {
-            backgroundColor: 'primary.light',
-          },
-        }}
-      >
-        ES
-      </ToggleButton>
+      {["en", "es"].map((lng) => (
+        <ToggleButton
+          key={lng}
+          value={lng}
+          aria-label={lng === "en" ? "English" : "Spanish"}
+          sx={{
+            fontWeight: "bold",
+            fontSize: "12px",
+            textTransform: "uppercase",
+            backgroundColor: theme.palette.primary.main,
+            color: theme.palette.text.primary,
+            px: 1.5,
+            "&.Mui-selected": {
+              backgroundColor: theme.palette.third.main,
+              color: theme.palette.primary.main,
+            },
+            "&:hover": {
+              backgroundColor: theme.customColors.hoverAccent,
+              color: theme.palette.primary.main,
+            },
+            '&.Mui-selected:hover': {
+              backgroundColor: theme.palette.third.main,
+            },
+          }}
+        >
+          {lng.toUpperCase()}
+        </ToggleButton>
+      ))}
     </ToggleButtonGroup>
   );
 }

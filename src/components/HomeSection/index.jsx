@@ -29,7 +29,7 @@ export default function HomeSection() {
   ];
 
   return (
-    <Box component="section" id="home" sx={{ minHeight: "100vh", py: 8 }}>
+    <Box component="section" id="home" sx={{ py: 8 }}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} sm={6} component="article" textAlign="center"
           sx={{ color: theme.palette.text.primary }}

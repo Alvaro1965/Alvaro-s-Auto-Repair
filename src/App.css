@@ -26,6 +26,9 @@ a {
   color: inherit;
 }
 
+main{
+  padding: 15px;
+}
 .carousel .slide {
   opacity: 0;
   transition: opacity 1s ease-in-out;
