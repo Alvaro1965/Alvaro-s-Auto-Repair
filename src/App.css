@@ -5,8 +5,13 @@ html {
 :root {
   --color-primary: #F5F1E6;
   --color-secondary: #1A1A1A;
-  --color-accent: #B03026;
+  --color-third: #B03026;
   --color-text: #1A1A1A;
+  --color-hover: #90251F;
+}
+
+body{
+  background-color: var(--color-primary);
 }
 
 *,
