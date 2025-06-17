@@ -13,7 +13,7 @@ export default function ContactSection() {
   const { t } = useTranslation();
 
   return (
-    <Box sx= {{textAlign: { xs: 'center', md: 'left' } }}>
+    <Box component="section" id="contact" sx= {{textAlign: { xs: 'center', md: 'left' } }}>
       <MotionTypography
         variant="h4"
         gutterBottom

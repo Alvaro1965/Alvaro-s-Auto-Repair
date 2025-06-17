@@ -30,8 +30,8 @@ export default function AboutSection() {
       >
         <MotionGridItem
           item
-          xs={12}
-          sm={6}
+          sm={12}
+          md={6}
           component="aside"
           sx={{ p: 1 }} //delete if you change spacing 0 to 4
           initial={{ opacity: 0, x: -10 }}
@@ -52,7 +52,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Box sx={{ width:'100%'}}>
+            <Box sx={{ width:'50%'}}>
               <CustomCarousel images={aboutImages} isMobile={isMobile} />
             </Box>
           </MotionBox>
@@ -60,8 +60,8 @@ export default function AboutSection() {
 
         <MotionGridItem
           item
-          xs={12}
-          sm={6}
+          sm={12}
+          md={6}
           sx={{ p: 1 }} //delete if you change spacing 0 to 4
           component="article"
           textAlign="center"
