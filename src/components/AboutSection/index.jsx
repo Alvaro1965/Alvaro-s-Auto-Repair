@@ -1,8 +1,11 @@
 import { Box, Typography, Grid, useMediaQuery, useTheme } from "@mui/material";
-import mechanicImg from "../../assets/images/mechanic-logo5.png";
 import CustomCarousel from "../CustomCarousel";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import mechanicCarImg1 from "../../assets/images/photo1.png";
+import mechanicCarImg2 from "../../assets/images/photo3.png";
+import mechanicCarImg3 from "../../assets/images/photo5.png";
+import mechanicCarImg4 from "../../assets/images/photo6.jpg";
 
 const MotionGridItem = motion(Grid);
 const MotionTypography = motion(Typography);
@@ -14,9 +17,10 @@ export default function AboutSection() {
   const { t } = useTranslation();
 
   const aboutImages = [
-    { src: mechanicImg, alt: "Mechanic at work 1" },
-    { src: mechanicImg, alt: "Mechanic at work 2" },
-    { src: mechanicImg, alt: "Mechanic at work 3" },
+    { src: mechanicCarImg1, alt: "Mechanic at work 1" },
+    { src: mechanicCarImg2, alt: "Mechanic at work 2" },
+    { src: mechanicCarImg3, alt: "Mechanic at work 3" },
+    { src: mechanicCarImg4, alt: "Mechanic at work 4" },
   ];
 
   return (
