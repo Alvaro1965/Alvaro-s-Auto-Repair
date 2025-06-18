@@ -83,8 +83,6 @@ export default function ContactSection() {
               <Typography variant="body1">
                 {t("Contact.week")}
                 <br />
-                {t("Contact.weekend")}
-                <br />
                 {t("Contact.closed")}
               </Typography>
             </MotionBox>
