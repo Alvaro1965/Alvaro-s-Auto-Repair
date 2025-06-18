@@ -69,7 +69,6 @@ export default function CustomCarousel({ images = [], isMobile = false }) {
               height: '100%',
               objectFit: 'cover', 
             }}
-            // loading="lazy"
           />
         ))}
       </Carousel>
