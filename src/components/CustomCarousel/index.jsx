@@ -64,6 +64,10 @@ export default function CustomCarousel({ images = [], isMobile = false }) {
             key={index}
             src={img.src}
             alt={img.alt || `Slide ${index + 1}`}
+            style={{
+              height: '100%',
+              // objectFit: 'cover', 
+            }}
           />
         ))}
       </Carousel>
