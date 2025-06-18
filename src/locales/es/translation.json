@@ -31,8 +31,7 @@
     "address": "Dirección",
     "phone": "Teléfono",
     "hours": "Horario",
-    "week": "Lunes a Viernes: ",
-    "weekend": "Sábado: ",
+    "week": "Lunes a Sábado: 9am - 6pm",
     "closed": "Domingo: Cerrado"
   }
 }
