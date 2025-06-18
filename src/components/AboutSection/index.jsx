@@ -39,6 +39,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <MotionBox
             sx={
@@ -51,6 +52,7 @@ export default function AboutSection() {
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
           >
             <Box sx={{ width: { sm: '50%', md: '100%'}, pb:2}}>
               <CustomCarousel images={aboutImages} isMobile={isMobile} />
@@ -68,6 +70,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <MotionTypography
             variant="h4"
@@ -76,6 +79,7 @@ export default function AboutSection() {
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
             sx={{
               borderBottom: (theme) => `4px solid ${theme.palette.third.main}`,
               display: "inline-block",
@@ -89,6 +93,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
             textAlign="left"
+            viewport={{ once: true }}
           >
             {t("About.description")}
           </MotionTypography>
