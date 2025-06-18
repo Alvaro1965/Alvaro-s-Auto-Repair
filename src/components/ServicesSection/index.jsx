@@ -48,7 +48,7 @@ export default function ServicesSection() {
               viewport={{ once: true }}
             >
               {service.icon}
-              <Typography variant="subtitle1" sx={{ mt: 1 }}>
+              <Typography variant="body1" sx={{ mt: 1 }}>
                 {service.label}
               </Typography>
             </motion.div>
