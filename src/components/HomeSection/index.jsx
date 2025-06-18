@@ -7,7 +7,6 @@ import {
   useTheme,
 } from "@mui/material";
 import mechanicLogo from "../../assets/images/mechanic-logo5.png";
-import jeepImg from "../../assets/images/photo4.png";
 import carImg from "../../assets/images/photo7.jpg";
 import { useTranslation, Trans } from "react-i18next";
 import CustomCarousel from "../CustomCarousel";
@@ -26,7 +25,6 @@ export default function HomeSection() {
 
   const carouselImages = [
     { src: mechanicLogo, alt: "Mechanic Logo" },
-    { src: jeepImg, alt: "self portrait with jeep" },
     { src: carImg, alt: "classic dodge charger" },
   ];
 
