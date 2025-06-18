@@ -23,6 +23,8 @@ export default function CustomCarousel({ images = [], isMobile = false }) {
         boxShadow: 3,
         overflow: "hidden",
         borderRadius: 2,
+        width:"75%",
+        height:"75%",
       }}
     >
       <Carousel

@@ -31,7 +31,7 @@ export default function HomeSection() {
   ];
 
   return (
-    <Box component="section" id="home" sx={{ py: 8 }}>
+    <Box component="section" id="home" sx={{ pt:4,pb:8 }}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} sm={6} component="article" textAlign="center"
           sx={{ color: theme.palette.text.primary }}
@@ -64,7 +64,9 @@ export default function HomeSection() {
           </Button>
         </Grid>
         <Grid item xs={12} sm={6} component="aside">
-          <CustomCarousel images={carouselImages} isMobile={isMobile} />
+          <Box sx={{display:'flex', justifyContent:'center'}}>
+            <CustomCarousel images={carouselImages} isMobile={isMobile} />
+          </Box>
         </Grid>
       </Grid>
     </Box>

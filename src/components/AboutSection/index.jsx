@@ -54,7 +54,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Box sx={{ width: { sm: '50%', md: '100%'}, pb:2}}>
+            <Box sx={{ width: { sm: '50%', md: '100%'}, pb:2, display:'flex', justifyContent:'center'}}>
               <CustomCarousel images={aboutImages} isMobile={isMobile} />
             </Box>
           </MotionBox>
