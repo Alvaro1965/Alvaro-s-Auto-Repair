@@ -25,20 +25,19 @@ export default function Nav() {
 
   return (
     <>
-      <AppBar position="sticky" sx={{ backgroundColor:'#1e1e1e'}}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+      <AppBar component='nav' position="sticky" style={{ backgroundColor: theme.palette.secondary.main }}>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', padding: '8px' }}>
           <Box
             component="img"
             src={mechanicImg}
             alt="Mechanic Logo"
             sx={{
-              height: 60,
-              width: 60,
+              height: 75,
+              width: 75,
               borderRadius: '25%',
               objectFit: 'cover',
             }}
           />
-
 
           {isMobile ? (
             <Box>
@@ -61,7 +60,7 @@ export default function Nav() {
 
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
         <Box
-          sx={{ width: 250, backgroundColor: '#1e1e1e', color: '#F5F1E6', height: '100%' }}
+          style={{ backgroundColor: theme.palette.secondary.main, color: theme.palette.primary.main, width: 250, height: '100%' }}
           role="presentation"
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}

@@ -4,6 +4,7 @@ import CallIcon from '@mui/icons-material/Call';
 import TimeIcon from '@mui/icons-material/AccessTime';
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useTheme } from '@mui/material/styles';
 
 const MotionGridItem = motion(Grid);
 const MotionTypography = motion(Typography);
@@ -11,6 +12,7 @@ const MotionBox = motion(Box);
 
 export default function ContactSection() {
   const { t } = useTranslation();
+  const theme = useTheme();
 
   return (
     <Box component="section" id="contact" sx= {{textAlign: { xs: 'center', md: 'left' } }}>
@@ -66,7 +68,7 @@ export default function ContactSection() {
               <Typography variant="h5">
                 <CallIcon fontSize="small" /> {t("Contact.phone")}
               </Typography>
-              <Link href="tel:+19165296016" underline="hover" sx={{ color: '#1e1e1e', fontWeight: 'bold' }}>
+              <Link href="tel:+19165296016" underline="hover" style={{ color: theme.palette.secondary.main, fontWeight: 'bold' }}>
                 (916) 529-6016
               </Link>
             </MotionBox>
