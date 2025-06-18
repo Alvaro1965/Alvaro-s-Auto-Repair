@@ -40,13 +40,18 @@ export default function Nav() {
           />
 
           {isMobile ? (
-            <Box>
+            <Box sx={{
+              display: 'flex',
+              alignItems: 'center',
+              overflowX: 'hidden',
+              px:1,
+            }}>
               <IconButton edge="end" onClick={toggleDrawer(true)}>
                 <MenuIcon sx={{ color: '#F5F1E6 '}}/>
               </IconButton>
             </Box>
           ) : (
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center',gap: 2 }}>
               {navItems.map((item) => (
                 <Button key={item.href} href={item.href}>
                   {item.label}
@@ -68,10 +73,10 @@ export default function Nav() {
           <List>
             {navItems.map((item) => (
               <ListItem button key={item.href} component="a" href={item.href}>
-                <ListItemText primary={item.label} />
+                <ListItemText primary={item.label} sx={{ textAlign: 'center' }}/>
               </ListItem>
             ))}
-            <ListItem>
+            <ListItem sx={{ justifyContent: 'center' }}>
               <LanguageToggle />
             </ListItem>
           </List>
