@@ -35,7 +35,7 @@ export default function AboutSection() {
           sm={12}
           md={6}
           component="aside"
-          sx={{ px: 2 }}
+          sx={{ px: 2, mt: 3 }}
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -64,7 +64,7 @@ export default function AboutSection() {
           item
           sm={12}
           md={6}
-          sx={{ px: 1 }}
+          sx={{ px: 2, mt: 3 }}
           component="article"
           textAlign="center"
           initial={{ opacity: 0, x: 10 }}

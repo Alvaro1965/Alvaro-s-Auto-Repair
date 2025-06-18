@@ -28,8 +28,9 @@ a {
 }
 
 main{
-  padding: 15px;
+  padding: 25px;
 }
+
 .carousel .slide {
   opacity: 0;
   transition: opacity 1s ease-in-out;
